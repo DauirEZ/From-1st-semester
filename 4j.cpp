@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+    int main(){
+        int n,m;
+        cin >> n >>m;
+        int z[n][m];
+        for(int i=0; i<n; i++)
+            for(int j=0; j<m; j++)
+                cin >> z[i][j];
+            
+        
+            for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                if((i+j)%2==0)
+                    cout<<z[i][j]+1<<" ";
+            else cout<<z[i][j]-1<<" ";
+            } 
+            cout<<endl; 
+        }
+        
+    }
+    
+    
